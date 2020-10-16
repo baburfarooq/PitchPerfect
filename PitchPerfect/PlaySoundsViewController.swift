@@ -50,14 +50,12 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func stopButtonPressed(_ sender: UIButton) {
         stopAudio()
+        showAlert("Alert", message: "You have Stopped the Audio")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
-        
-
-        // Do any additional setup after loading the view.
     }
     
 
